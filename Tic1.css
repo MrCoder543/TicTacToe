@@ -1,0 +1,121 @@
+.gamecon{
+    justify-content: center;
+    margin-top: 50px;
+    display:flex;
+    }
+.contain{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: verdana;
+    position: relative;
+    }
+.box{
+    border:2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.box:hover{
+        background: rgb(242,234,250);
+}    
+.bt{
+    border-top: 0;
+}
+.br{
+    border-right:0;
+}
+.bl{
+    border-left:0;
+}
+.bb{
+    border-bottom:0;
+}
+#info{
+   width: 275px;
+   height: 100%;
+   font-size:25px;
+   font-family:verdana;
+   margin-left:25px;
+   padding:10px;
+}
+#turn{
+    margin-top:10px;
+}
+#win{
+    margin-top:10px;
+}
+#reset{
+    margin-top:10px;
+    background: rgb(233, 142, 249);
+    border-radius: 5px;
+    width:60px;
+    height:30px;
+    cursor: pointer;
+}
+
+
+/*@media only screen and (-width:0px){
+    .contain{
+        grid-template-rows: repeat(3,75px);
+        grid-template-columns: repeat(3,75px);
+        justify-content: center;
+    }    
+    .gamecon{
+        display:block;
+    }
+}*/
+@media only screen and (max-width:450px){
+    .contain{
+        grid-template-rows: repeat(3,100px);
+        grid-template-columns: repeat(3,100px);
+        justify-content: center;
+    } 
+    .gamecon{
+        display:block;
+    }
+    .box{
+        font-size: 80px;
+        }
+    #info{
+        justify-content: center;
+        margin:auto;
+    }
+}
+@media only screen and (max-width:500px){
+    .contain{
+        grid-template-rows: repeat(3,25vw);
+        grid-template-columns: repeat(3,25vw);
+        justify-content: center;
+    } 
+    .gamecon{
+        display:block;
+    }
+    .box{
+        font-size: 80px;
+        }
+    #info{
+        justify-content: center;
+        margin:auto;
+    }
+}
+@media only screen and (max-width:550px){
+    .contain{
+        grid-template-rows: repeat(3,25vw);
+        grid-template-columns: repeat(3,25vw);
+        justify-content: center;
+    } 
+    .gamecon{
+        display:block;
+    }
+    .box{
+        font-size: 80px;
+        }
+    #info{
+        justify-content: center;
+        margin:auto;
+        font-size:5vw;
+    }
+}
